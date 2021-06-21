@@ -1,0 +1,8 @@
+{
+    "baseUrl": "https://homolog.clubeale.com.br",
+    "testFiles": "**/*.feature",
+    "video": false,
+    "screenshotOnRunFailure": false,
+    "experimentalStudio": true
+
+}
