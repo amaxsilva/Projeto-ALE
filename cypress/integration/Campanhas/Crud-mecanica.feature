@@ -1,0 +1,1 @@
+Feature: Criar campanha mecanica
