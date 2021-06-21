@@ -4,16 +4,17 @@ import LoginPage from "../../LoginPage";
 const loginPage = new LoginPage
 
 it('Campanha cheque de reales' , () => {
-    
+   
     Given(/^que o usuário esteja na tela home$/, () => {
-	    cy.viewport(1366, 635)
+        cy.viewport(1366, 635)
         loginPage.acessarSite();
         cy.title().should('be.equal', 'Clube ALE - ADMIN') //validar o nome da página
         cy.wait(3000) // time de 3000ms
-        });
+    });
 
-    Then(/^clicar no menu lateral esquerdo em "([^"]*)" e "([^"]*)"$/, (args1,args2) => {
-	    console.log(args1,args2);
+    And(/^clicar no menu lateral esquerdo em "([^"]*)" e "([^"]*)"$/, (args1,args2) => {
+        console.log(args1,args2);
+        console.log(args1,args2);
         loginPage.acessarMenuCampanha();
         cy.get('.btn-primary').click() //Clica no botão Criar campanha
         cy.url().should('be.equal', 'https://homolog.clubeale.com.br/admin/campanha/adicionar-campanhas')
@@ -63,9 +64,8 @@ it('Campanha cheque de reales' , () => {
         cy.get('.mb-2 > .row > .text-right > .btn').click()  //filtro 
     });
 
-    Then(/^o sistema deve criar a campanha do tipo cheque reales$/, () => {	          
+    Then(/^o sistema deve criar a campanha do tipo cheque reales$/, () => {
         cy.get(':nth-child(7) > .col-md-12 > .btn').click()
-    });
+    });        
 
 })
-

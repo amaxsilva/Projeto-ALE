@@ -1,3 +1,6 @@
+ Feature: Campanha cheque de reales
+ 
+     Feature Description
  @ChequedeReales
     Scenario: CT01 - Criar campanha código - cheque de reales
         Given que o usuário esteja na tela home 

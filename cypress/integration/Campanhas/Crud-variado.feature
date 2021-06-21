@@ -1,4 +1,4 @@
-Feature: Criar campanha codigo
+Feature: Campanha codigo
 
    @CódigoVariado
     Scenario: CT01 - Criar campanha código variado
