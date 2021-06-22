@@ -3,8 +3,6 @@
 import LoginPage from "../../LoginPage";
 const loginPage = new LoginPage
 
-it('CT01', () => {
-
         Given(/^que o usuário esteja na tela home$/, () => {
 	    
            cy.viewport(1366, 635)
@@ -54,12 +52,7 @@ it('CT01', () => {
             return true;
         });
 
-});
 
-/* it('', () => {
-        cy.visit('www.google.com.br')
-
-}) */
 
        
                 
