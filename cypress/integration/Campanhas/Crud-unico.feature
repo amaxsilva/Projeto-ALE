@@ -1,6 +1,5 @@
 Feature: Campanha código único
 
-    Feature Description
 
 @CódigoÚnico
     Scenario: CT01 - Criar campanha código único

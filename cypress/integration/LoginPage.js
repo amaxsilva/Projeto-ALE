@@ -6,9 +6,9 @@ class LoginPage {
     acessarSite() {
         cy.visit("/admin/login")
         cy.get('.auto-form-wrapper > .ng-pristine > .form-group > .input-group > #login').click()     
-        cy.get('.auto-form-wrapper > .ng-valid > .form-group > .input-group > #login').type('')     
+        cy.get('.auto-form-wrapper > .ng-valid > .form-group > .input-group > #login').type('06849382608')     
         cy.get('.auto-form-wrapper > .ng-valid > .form-group > .input-group > #senha').click()     
-        cy.get('.auto-form-wrapper > .ng-valid > .form-group > .input-group > #senha').type('')     
+        cy.get('.auto-form-wrapper > .ng-valid > .form-group > .input-group > #senha').type('K2R3Pr')     
         cy.get('.col-lg-4 > .auto-form-wrapper > .ng-valid > .form-group > .btn').click()
     }
    

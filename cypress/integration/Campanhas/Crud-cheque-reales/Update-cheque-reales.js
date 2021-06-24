@@ -22,5 +22,5 @@ Then(/^o sistema deve abrir a campanha para edição$/, () => {
     cy.get('.ng-untouched > .row > .col-md-6 > .form-group > #department').click()
     cy.get('.ng-untouched > .row > .col-md-6 > .form-group > #department').click()
     cy.get('.ng-untouched > .row > .col-md-6 > .form-group > #department').type('RH')
-    cy.get('.ng-star-inserted > .ng-valid > .row > .col-md-12 > .btn:nth-child(2)').click()
+    cy.get('.ng-star-inserted > .ng-valid > .row > .col-md-12 > .btn:nth-child(2)').click()//clicar no botão editar
 });

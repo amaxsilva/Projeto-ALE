@@ -6,12 +6,13 @@ const loginPage = new LoginPage
 	Given(/^que estou na tela de lista de campanhas$/, () => {
 		loginPage.acessarSite();
 		loginPage.acessarMenuCampanha();
+		cy.wait(3000)
 		
 	});
 
 	When(/^digitar no campo "Nome da campanha": <nome da campanha CT01>$/, (args1) => {
 		console.log(args1);
-		cy.get('.ng-untouched > .row > .col-md-12 > .form-group > #txtNomeCampanha').click()	
+		cy.get('#txtNomeCampanha').click()	
 	    cy.get('.ng-untouched > .row > .col-md-12 > .form-group > #txtNomeCampanha').type('Teste de campanha Vazia nova')
 	});
 
